@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact list</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<main>
+    <header class="header">
+        <div class="search_div">
+            <form>
+                <label for="search">
+                    <i class="fa fa-search"></i>
+                </label>
+                <input type="search" id="search" name="search" placeholder="search">
+                </form>
+        </div>
+        <div class="add_div">
+
+            <button class="addbtn">
+            <i class="fas fa-user-plus"></i>
+            Add new contact
+        </button>
+        </div>
+    </header>
+    <section class="form">
+        <div class="addnewcontact">
+            <i class="fa fa-user-plus"></i>
+            <form class="">
+                <input type="text" placeholder="full name" id="contact_for-name">
+                <input type="text" placeholder="phone" id="contact_for-phone">
+                <input type="email" placeholder="Email" id="contact_for-email">
+                <input type="text" placeholder="home addres" id="contact_for-addres">
+            </form>
+            <button class="save-btn btn">
+                <i class="fas fa-save"></i>
+                save
+            </button>
+            <div class="close">
+                <i class="far fa-window-close"></i>
+            </div><!--close-->
+        </div><!--add new contact-->
+        </section><!--form-->
+        <section class="table_section">
+            <table>
+                <thead>
+                    <th>#id</th>
+                    <th> <i class="fa-solid fa-user" style="color: #070b13;"></i> name</th>
+                    <th> <i class="fa-solid fa-phone-flip" style="color: #0a1324;"></i> phone </th>
+                    <th> <i class="fa-solid fa-envelope"></i> Email </th>
+                    <th> <i class="fa-solid fa-map-location-dot" style="color: #0b0e13;"></i> Adress</th>
+                    <th>Edit</th>
+                    <th>delete</th>
+                    <tbody id="tbody">
+                     
+                    </tbody>
+                </thead>
+            </table>
+        </section>
+
+</main>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
